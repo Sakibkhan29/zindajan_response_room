@@ -20,3 +20,25 @@ soundBtn.addEventListener('click',async()=>{
     catch(e){soundBtn.textContent='♫ Add ambient.mp3';}
   }else{audio.pause();playing=false;soundBtn.textContent='♫ Sound off';}
 });
+
+const ambient = document.getElementById("ambient");
+const soundToggle = document.getElementById("soundToggle");
+
+if (ambient && soundToggle) {
+  soundToggle.addEventListener("click", async () => {
+    if (ambient.paused) {
+      try {
+        await ambient.play();
+        soundToggle.textContent = "♫ Sound on";
+        soundToggle.setAttribute("aria-pressed", "true");
+      } catch (error) {
+        console.error("Audio playback failed:", error);
+        soundToggle.textContent = "♫ Audio unavailable";
+      }
+    } else {
+      ambient.pause();
+      soundToggle.textContent = "♫ Sound off";
+      soundToggle.setAttribute("aria-pressed", "false");
+    }
+  });
+}
