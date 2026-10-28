@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08090d">
+  <title>Zindajan | Beyond Emergency Relief</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app">
+    <div class="topline"><span>MU20 OPPORTUNITY SUMMIT</span><span>SDG 10 · REDUCED INEQUALITIES</span></div>
+    <section class="screen active" id="s0">
+      <p class="eyebrow">A HUMANITARIAN CASE STUDY</p>
+      <h1>WHAT IF THE<br><em>BASICS</em> WEREN'T<br>GUARANTEED?</h1>
+      <p class="sub">A short reflection on the children affected by the 2023 earthquakes in Herat, Afghanistan.</p>
+      <button class="primary" data-next="s1">Begin experience <span>→</span></button>
+      <p class="small">You can participate silently. No personal information is collected.</p>
+    </section>
+
+    <section class="screen" id="s1">
+      <p class="eyebrow">01 / A QUESTION</p>
+      <h2>Could you imagine going a day without reliable access to safe drinking water?</h2>
+      <p class="sub">Take a moment. Then choose the answer that reflects your experience.</p>
+      <div class="choices">
+        <button class="choice" data-next="s2">Yes, I can imagine it</button>
+        <button class="choice" data-next="s2">No, it is difficult to imagine</button>
+      </div>
+      <p class="small">There is no right or wrong answer.</p>
+    </section>
+
+    <section class="screen" id="s2">
+      <p class="eyebrow">02 / THE REGIONAL PICTURE · HERAT, 2023</p>
+      <div class="stat">44<span>%</span></div>
+      <h2>of respondents in an IRC assessment reported losing access to water points after the earthquake.</h2>
+      <p class="source">ACAPS, <i>Earthquakes in Herat province</i>, 12 October 2023, citing an IRC assessment conducted on 9 October 2023.</p>
+      <p class="caveat">This is an assessment finding, not a percentage of the entire population of Herat.</p>
+      <button class="primary" data-next="s3">Look closer →</button>
+    </section>
+
+    <section class="screen" id="s3">
+      <p class="eyebrow">03 / THE SCALE OF DAMAGE · WESTERN AFGHANISTAN</p>
+      <div class="stat">258</div>
+      <h2>water systems were destroyed across the western province following the October 2023 earthquakes.</h2>
+      <p class="source">UNICEF Afghanistan, 22 March 2024.</p>
+      <p class="sub">The impact was not limited to one household or one village. Damage to water infrastructure affected families and children across the earthquake-affected region.</p>
+      <button class="primary" data-next="s4">Now, Zindajan →</button>
+    </section>
+
+    <section class="screen" id="s4">
+      <p class="eyebrow">04 / ZINDAJAN · THE CHILDREN</p>
+      <div class="stat fraction">244 <span>/ 380</span></div>
+      <h2>children were among the survivors reported at Gazarga transit centre in Herat City.</h2>
+      <p class="source">WHO, Afghanistan Earthquake Health Situation Report No. 4, October 2023.</p>
+      <p class="caveat">This describes the group reported at the transit centre. It is not the total number of displaced children in Zindajan.</p>
+      <div class="bar"><div class="barfill"></div></div>
+      <p class="small">Approximately 64.2% of this reported group were children.</p>
+      <button class="primary" data-next="s5">What does this mean? →</button>
+    </section>
+
+    <section class="screen" id="s5">
+      <p class="eyebrow">05 / THE REAL ISSUE</p>
+      <h2>Water is essential. So are healthcare, education and protection.</h2>
+      <p class="sub">When displacement interrupts access to these essentials, children face more than the immediate effects of an earthquake. They face unequal opportunities to recover and rebuild their lives.</p>
+      <div class="callout">Displacement should change a child's location — not their access to opportunity.</div>
+      <button class="primary" data-next="s6">Explore our response →</button>
+    </section>
+
+    <section class="screen" id="s6">
+      <p class="eyebrow">06 / THREE POLICY DIRECTIONS</p>
+      <div class="policy"><b>01</b><div><h3>Long-Term Recovery & Family Assistance</h3><p>Connect displaced families with continued support beyond the immediate emergency response.</p></div></div>
+      <div class="policy"><b>02</b><div><h3>Mobile Healthcare</h3><p>Bring essential healthcare, referrals and child-sensitive support closer to underserved communities.</p></div></div>
+      <div class="policy"><b>03</b><div><h3>Mobility-Adaptive Education</h3><p>Help children continue learning after displacement through flexible enrolment and a proposed Portable Learning Identity.</p></div></div>
+      <button class="primary" id="restart">Restart experience ↺</button>
+      <p class="small">A student policy proposal under SDG 10.2 and 10.3.</p>
+    </section>
+
+    <footer><span>HERAT · AFGHANISTAN</span><span id="progress">01 / 07</span></footer>
+  </main>
+  <div class="sound">
+    <button id="soundToggle" aria-label="Toggle background audio">♫ Sound off</button>
+    <audio id="ambient" loop preload="none"></audio>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
