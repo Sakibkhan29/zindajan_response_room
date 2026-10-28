@@ -31,10 +31,11 @@ if (ambient && soundToggle) {
         await ambient.play();
         soundToggle.textContent = "♫ Sound on";
         soundToggle.setAttribute("aria-pressed", "true");
-      } catch (error) {
-        console.error("Audio playback failed:", error);
-        soundToggle.textContent = "♫ Audio unavailable";
-      }
+     } catch (error) {
+  console.error("Audio playback failed:", error.name, error.message);
+  soundToggle.textContent = "♫ Audio unavailable";
+  alert("Audio error: " + error.message);
+}
     } else {
       ambient.pause();
       soundToggle.textContent = "♫ Sound off";
